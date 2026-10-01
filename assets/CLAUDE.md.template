@@ -1,0 +1,40 @@
+# Project: [Name]
+
+## What this product does
+[2–3 sentences. Who the user is, what problem it solves.]
+
+## Stack (do not change without asking)
+- Frontend: [e.g. Next.js + TypeScript + Tailwind]
+- Backend: [e.g. Next.js API routes / Node + Fastify / Python + FastAPI]
+- Database: [e.g. Postgres via Supabase / Neon], ORM: [e.g. Prisma / Drizzle]
+- Auth: [e.g. Clerk / Supabase Auth / Auth.js]
+- Hosting: [e.g. Vercel + Railway]
+
+## Tenancy
+- Model: [individual / team / organisation accounts]
+- Every tenant-owned table has organization_id. Every query on a tenant table filters by it.
+
+## Rules
+- Never commit secrets. All secrets go in environment variables, documented in .env.example.
+- Every new API endpoint needs: input validation, auth check, authorization check (via can()), tests.
+- Every database change goes through a migration file. Never edit the DB by hand.
+- Run lint, typecheck and tests before saying a task is done.
+- Never modify a test to make it pass. If a test reveals a bug, fix the code or report it.
+- Ask before adding a new dependency.
+- Prefer small, reviewable changes. One feature per branch. Never push directly to main.
+- Commit messages follow Conventional Commits.
+
+## Commands
+- Dev: [npm run dev]
+- Test: [npm test]
+- Lint/typecheck: [npm run lint && npm run typecheck]
+- Migrate: [npx prisma migrate dev]
+
+## Conventions
+- API conventions: /docs/api-conventions.md
+- Permissions matrix: /docs/permissions.md
+- Testing strategy: /docs/testing.md
+
+## Architecture decisions
+See /docs/decisions/ for the log of decisions and why they were made.
+Update this file every time a decision is made.
