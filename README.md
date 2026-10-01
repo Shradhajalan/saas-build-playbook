@@ -22,7 +22,7 @@ assets/
 
 ## Install
 
-**Claude.ai:** download this repo as a ZIP (Code → Download ZIP), rename the extracted folder to `saas-build-playbook`, zip that folder so `SKILL.md` sits at `saas-build-playbook/SKILL.md`, and upload it under Settings → Capabilities → Skills.
+**Claude.ai:** download `saas-build-playbook.skill` from the [latest release](https://github.com/Shradhajalan/saas-build-playbook/releases/latest) and upload it under Settings → Capabilities → Skills.
 
 **Claude Code:** copy this folder into `~/.claude/skills/saas-build-playbook/` (personal) or `.claude/skills/saas-build-playbook/` in a project.
 
@@ -34,3 +34,7 @@ Once installed, it triggers on things like:
 - "Give me Claude Code prompts to add multi-tenant auth with Supabase"
 - "Write a CLAUDE.md for my Next.js + Stripe project"
 - "How do I make my Razorpay webhooks idempotent?"
+
+## License
+
+MIT. See [LICENSE](LICENSE).
